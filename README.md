@@ -1,4 +1,4 @@
-# mfva android
+# mfva
 
 [Download](https://github.com/viren-nadkarni/mfva/releases)
 
