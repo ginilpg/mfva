@@ -48,9 +48,10 @@ jobs:
           file_path: app/app-debug.apk        # Specify the path to your .ipa or .apk here
           risk_threshold: MEDIUM                                      # Update this to desired risk threshold [LOW, MEDIUM, HIGH, CRITICAL]
           sarif: Enable
+          api_host: "http://35.238.82.102/api/"
 
-      - name: Upload SARIF to GHAS
-        if: always()
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: report.sarif
+      # - name: Upload SARIF to GHAS
+      #   if: always()
+      #   uses: github/codeql-action/upload-sarif@v3
+      #   with:
+      #     sarif_file: report.sarif
