@@ -45,7 +45,7 @@ jobs:
         uses: appknox/appknox-github-action@readme-codescan
         with:
           appknox_access_token: ${{ secrets.APPKNOX_ACCESS_TOKEN }}
-          file_path: app/app-debug.apk        # Specify the path to your .ipa or .apk here
+          file_path: app/telegram1.apk        # Specify the path to your .ipa or .apk here
           risk_threshold: MEDIUM                                      # Update this to desired risk threshold [LOW, MEDIUM, HIGH, CRITICAL]
           # sarif: Enable
           sast-timeout: 1
