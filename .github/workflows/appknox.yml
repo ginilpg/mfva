@@ -48,7 +48,7 @@ jobs:
           file_path: app/telegram1.apk        # Specify the path to your .ipa or .apk here
           risk_threshold: MEDIUM                                      # Update this to desired risk threshold [LOW, MEDIUM, HIGH, CRITICAL]
           # sarif: Enable
-          sast-timeout: 1
+          sast_timeout: 1
 
       # - name: Upload SARIF to GHAS
       #   if: always()
