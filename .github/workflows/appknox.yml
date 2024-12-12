@@ -34,7 +34,6 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
