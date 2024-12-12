@@ -38,7 +38,8 @@ jobs:
         run: chmod +x gradlew
 
       # - name: Build the app
-      #   run: ./gradlew build                                         # Update this to build your Android or iOS application
+      #   run: ./gradlew build          
+      # Update this to build your Android or iOS application
 
       - name: Appknox GitHub action
         uses: appknox/appknox-github-action@readme-codescan
