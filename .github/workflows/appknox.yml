@@ -47,8 +47,8 @@ jobs:
           appknox_access_token: ${{ secrets.APPKNOX_ACCESS_TOKEN }}
           file_path: app/app-debug.apk        # Specify the path to your .ipa or .apk here
           risk_threshold: MEDIUM                                      # Update this to desired risk threshold [LOW, MEDIUM, HIGH, CRITICAL]
-          sarif: Enable
-          host: "http://999935.238.82.102/api/"
+          # sarif: Enable
+          sast-timeout: 1
 
       # - name: Upload SARIF to GHAS
       #   if: always()
