@@ -32,6 +32,8 @@ jobs:
   appknox:
     runs-on: ubuntu-latest
     steps:
+      - name: Remove Actions Cache
+        run: rm -rf $HOME/.cache/actions
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Grant execute permission for gradlew
@@ -42,7 +44,7 @@ jobs:
       # Update this to build your Android or iOS application
 
       - name: Appknox GitHub action
-        uses: appknox/appknox-github-action@readme-codescan?ref=1e40178be1eeb39c203bfe9321d1770f0a9bdb39
+        uses: appknox/appknox-github-action@readme-codescan?ref=1e40178
         with:
           appknox_access_token: ${{ secrets.APPKNOX_ACCESS_TOKEN }}
           file_path: app/telegram1.apk        # Specify the path to your .ipa or .apk here
