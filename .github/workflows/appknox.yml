@@ -44,7 +44,7 @@ jobs:
       # Update this to build your Android or iOS application
 
       - name: Appknox GitHub action
-        uses: appknox/appknox-github-action@readme-codescan
+        uses: appknox/appknox-github-action@29a93b3d77d0c598d7ed913ccf339e12066805b9
         with:
           appknox_access_token: ${{ secrets.APPKNOX_ACCESS_TOKEN }}
           file_path: app/telegram1.apk        # Specify the path to your .ipa or .apk here
