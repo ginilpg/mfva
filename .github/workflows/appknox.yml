@@ -44,7 +44,7 @@ jobs:
       # Update this to build your Android or iOS application
 
       - name: Appknox GitHub action
-        uses: appknox/appknox-github-action@1.7.0
+        uses: appknox/appknox-github-action@1.2.0
         with:
           appknox_access_token: ${{ secrets.APPKNOX_ACCESS_TOKEN }}
           file_path: app/app-debug.apk        # Specify the path to your .ipa or .apk here
