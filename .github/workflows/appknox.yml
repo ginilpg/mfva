@@ -47,7 +47,7 @@ jobs:
         uses: appknox/appknox-github-action@1.2.0
         with:
           appknox_access_token: ${{ secrets.APPKNOX_ACCESS_TOKEN }}
-          file_path: app/mns.apk        # Specify the path to your .ipa or .apk here
+          file_path: app/telegram1.apk        # Specify the path to your .ipa or .apk here
           risk_threshold: MEDIUM                                      # Update this to desired risk threshold [LOW, MEDIUM, HIGH, CRITICAL]
           sarif: Enable
           sast_timeout: 1
