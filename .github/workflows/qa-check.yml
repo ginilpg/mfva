@@ -7,8 +7,20 @@ jobs:
   check-qa-label:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify QA label
-        if: contains(join(github.event.pull_request.labels.*.name, ','), 'QA Approved') == false
+      - name: Verify QA approval
         run: |
-          echo "❌ QA approval missing"
-          exit 1
+          LABELS="${{ join(github.event.pull_request.labels.*.name, ',') }}"
+          SENDER="${{ github.event.sender.login }}"
+
+          if [[ "$LABELS" != *"QA Approved"* ]]; then
+            echo "❌ QA approval missing"
+            exit 1
+          fi
+
+          # allow only QA team members
+          if [[ "$SENDER" != "ginilpg" && "$SENDER" != "varshajayapal" ]]; then
+            echo "❌ Only QA team members can give approval"
+            exit 1
+          fi
+
+          echo "✅ QA approval granted by $SENDER"
