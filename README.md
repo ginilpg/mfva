@@ -1,4 +1,4 @@
-# mfva testings - test
+# mfva testings - testing
 
 [Download](https://github.com/viren-nadkarni/mfva/releases)
 
