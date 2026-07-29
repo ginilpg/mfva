@@ -14,15 +14,7 @@ variables:
 - group: MFVA
 
 steps:
-- task: Gradle@2
 
-  inputs:
-    workingDirectory: ''
-    gradleWrapperFile: 'gradlew'
-    gradleOptions: '-Xmx3072m'
-    publishJUnitResults: false
-    testResultsFiles: '**/TEST-*.xml'
-    tasks: 'assembleDebug'
   
 - task: appknox.appknox-test.appknox.Appknox@2
   inputs:
