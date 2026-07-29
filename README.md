@@ -1,4 +1,4 @@
-# mfva testings - testingyty10
+# mfva testings - testingyty
 
 [Download](https://github.com/viren-nadkarni/mfva/releases)
 
