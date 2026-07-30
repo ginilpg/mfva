@@ -20,5 +20,5 @@ steps:
   inputs:
     filePath: './app/app-debug.apk'
     accessToken: '97b41feb66834d74acd326ccc5ca48b0cb77a4eb'
+    thresholdType: 'healthScore'
     healthScoreThreshold: '90'
-
